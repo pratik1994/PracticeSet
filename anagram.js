@@ -8,7 +8,7 @@ function anagram(str1, str2){
         obj[char] = (obj[char]||0)+1
     }
     console.log(obj)
-    for (char in str2){
+    for (char of str2){
         if(!obj[char]){
             return false
         }else{
