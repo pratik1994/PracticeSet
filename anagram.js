@@ -4,7 +4,7 @@ function anagram(str1, str2){
     }
     let obj={};
     
-    for(char in str1){
+    for(char of str1){
         obj[char] = (obj[char]||0)+1
     }
     console.log(obj)
